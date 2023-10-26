@@ -1,4 +1,4 @@
-# cs497homework4
+# CS497 Homework 4
 
 ## Question 1
 Begin by creating a mashmap to count the occurences of each value.  
@@ -13,4 +13,8 @@ Once that condition is satisfied we can return the result. Time complexity = O(n
 array n times.
 
 ## Question 2
-# 
+First initialize a left and right pointer that will be used to do a binary search from the target value.  
+While the pointers are not pointing to the same value, we calculate the mid point and if the target value minus the mid point value of the array is greater than the mid point value plus k minus the target value then we increment the left pointer. Else, we we set the right pointer equal to mid since the window of k closest elements will not be to the right of the mid point. Once the pointers meet, we return the values from the left pointer to the kth position which is calculated as left pointer plus k. Time complexity = O(logn + k)
+
+## Question 3
+
