@@ -17,4 +17,8 @@ First initialize a left and right pointer that will be used to do a binary searc
 While the pointers are not pointing to the same value, we calculate the mid point and if the target value minus the mid point value of the array is greater than the mid point value plus k minus the target value then we increment the left pointer. Else, we we set the right pointer equal to mid since the window of k closest elements will not be to the right of the mid point. Once the pointers meet, we return the values from the left pointer to the kth position which is calculated as left pointer plus k. Time complexity = O(logn + k)
 
 ## Question 3
+Create an empty list called min_heap which will be used to add the k elements. The first for loop will iterate through the nums list k times and push it to the heap.
+The second for loop will iterate through all the remainding elements if k is less than the length of the list nums. Each element is compared to the smallest element, which is the element at index 0, in min_heap. If nums[i] is greater than min_heap[0] then we pop the element at index 0 of the heap and push nums[i]. Once the for loops are done we can print the result. Time complexity = O(Nlogk), n being the total number of elements in the nums list and k being the number of largest elements.
+
+## Question 4
 
