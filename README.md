@@ -21,6 +21,6 @@ Create an empty list called min_heap which will be used to add the k elements. T
 The second for loop will iterate through all the remainding elements if k is less than the length of the list nums. Each element is compared to the smallest element, which is the element at index 0, in min_heap. If nums[i] is greater than min_heap[0] then we pop the element at index 0 of the heap and push nums[i]. Once the for loops are done we can print the result. Time complexity = O(Nlogk), n being the total number of elements in the nums list and k being the number of largest elements.
 
 ## Question 4
-
+One solution to this problem would be to use a for loop to iterate through the indices of the array. The nested for loop will iterate through the elements of the array. We set the result to be the largest integer possible so that if k is not found then we can print the base case of -1. The element at index j in the nested for loop will be added to the sum_ variable, this represents the summation of the elements of the subarray. If sum_ is equal to k then we want to update the result to be the minimum of its current value and length of the current subarray. Time complexity = O(n^2), since it is a nested loop and n being the length of the array.
 
 ## Question 5
